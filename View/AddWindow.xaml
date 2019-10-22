@@ -1,0 +1,25 @@
+﻿<Window x:Name="AddFlightWindow" x:Class="View.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        xmlns:res="clr-namespace:View.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static res:Resources.MainWindow1}" Height="350" Width="525">
+    <Grid>
+        <Label HorizontalAlignment="Left" Margin="75,55,0,0" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="517">
+            <Label x:Name="DirectionLabel" Content="{x:Static res:Resources.DirectionLabel}" HorizontalAlignment="Left" Margin="68,47,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="DepartureLabel" Content="{x:Static res:Resources.DepartureLabel}" HorizontalAlignment="Left" Margin="68,114,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="ArriveLabel" Content="{x:Static res:Resources.ArriveLabel}" HorizontalAlignment="Left" Margin="68,191,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="directionTextBox" HorizontalAlignment="Left" Height="23" Margin="279,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <TextBox x:Name="departureTextBox" HorizontalAlignment="Left" Height="23" Margin="279,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <TextBox x:Name="arriveTextBox" HorizontalAlignment="Left" Height="23" Margin="279,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+            <Button x:Name="AddFlightButton" Content="{x:Static res:Resources.AddFlightButton}" HorizontalAlignment="Left" Margin="397,264,0,0" VerticalAlignment="Top" Width="90" Click="AddFlightButton_Click" Height="32" FontWeight="Bold"/>
+            <Label x:Name="Format1Label" Content="{x:Static res:Resources.Format1Label}" HorizontalAlignment="Left" Margin="68,140,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="Format2Label" Content="{x:Static res:Resources.Format2Label}" HorizontalAlignment="Left" Margin="68,217,0,0" VerticalAlignment="Top"/>
+        </Grid>
+
+    </Grid>
+</Window>

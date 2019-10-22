@@ -1,0 +1,32 @@
+﻿<Window x:Name="AirportWindow1" x:Class="View.AirportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        xmlns:res="clr-namespace:View.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static res:Resources.MainWindow1}" Height="350" Width="525" Initialized="MainWindow_Initialized">
+    <Grid>
+        <DataGrid x:Name="flightGrid" HorizontalAlignment="Left" Height="142" VerticalAlignment="Top" Width="517" Margin="0,25,0,0"/>
+        <Button x:Name="AddButton" Content="{x:Static res:Resources.AddButton}" HorizontalAlignment="Left" Margin="25,193,0,0" VerticalAlignment="Top" Width="101" Click="AddButton_Click" Height="31"/>
+        <Button x:Name="UpdateButton" Content="{x:Static res:Resources.UpdateButton}" HorizontalAlignment="Left" Margin="148,193,0,0" VerticalAlignment="Top" Width="101" Click="UpdateButton_Click" Height="31"/>
+        <Button x:Name="DeleteButton" Content="{x:Static res:Resources.DeleteButton}" HorizontalAlignment="Left" Margin="268,193,0,0" VerticalAlignment="Top" Width="101" Click="DeleteButton_Click" Height="31"/>
+        <Button x:Name="ShowLogButton" Content="{x:Static res:Resources.ShowLogButton}" HorizontalAlignment="Left" Margin="395,193,0,0" VerticalAlignment="Top" Width="101" Click="ShowLogButton_Click" Height="31"/>
+        <Button x:Name="GetByCountryButton" Content="{x:Static res:Resources.GetByCountryButton}" HorizontalAlignment="Left" Margin="25,239,0,0" VerticalAlignment="Top" Width="101" Click="GetByCountryButton_Click" Height="32"/>
+        <Button x:Name="GetNightFlightsButton" Content="{x:Static res:Resources.GetNightFlightsButton}" HorizontalAlignment="Left" Margin="148,239,0,0" VerticalAlignment="Top" Width="101" Click="GetNightFlightsButton_Click" Height="32"/>
+        <Button x:Name="GetByDirectionButton" Content="{x:Static res:Resources.GetByDirectionButton}" HorizontalAlignment="Left" Margin="395,239,0,0" VerticalAlignment="Top" Width="101" Click="GetByDirectionButton_Click" Height="32"/>
+        <Button x:Name="SortByDepartureButton" Content="{x:Static res:Resources.SortByDepartureButton}" HorizontalAlignment="Left" Margin="268,239,0,0" VerticalAlignment="Top" Width="101" Click="SortByDepartureButton_Click" Height="32"/>
+        <TextBox x:Name="directionTextBox" HorizontalAlignment="Left" Height="23" Margin="395,283,0,0" TextWrapping="Wrap" Text="{x:Static res:Resources.directionTextBox}" VerticalAlignment="Top" Width="101"/>
+        <Menu x:Name="MainMenu" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="517">
+            <MenuItem x:Name="FileMenuItem" Header="{x:Static res:Resources.FileMenuItem}" Height="25" Width="100">
+                <MenuItem x:Name="ExitItem" Header="Exit"  HorizontalAlignment="Left" Height="25" Width="140" Click="ExitMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="LanguageMenuItem" Header="{x:Static res:Resources.LanguageMenuItem}" Height="25" Width="120">
+                <MenuItem x:Name="RussianMenuItem" Header="{x:Static res:Resources.RussianMenuItem}" HorizontalAlignment="Left" Height="25" Width="140" Click="RussianMenuItem_Click"/>
+                <MenuItem x:Name="UkrainianMenuItem" Header="{x:Static res:Resources.UkrainianMenuItem}" HorizontalAlignment="Left" Height="25" Width="140" Click="UkrainianMenuItem_Click"/>
+                <MenuItem x:Name="EnglishMenuItem" Header="{x:Static res:Resources.EnglishMenuItem}" HorizontalAlignment="Left" Height="25" Width="140" Click="EnglishMenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
